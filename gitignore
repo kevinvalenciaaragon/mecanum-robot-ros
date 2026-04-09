@@ -1,0 +1,39 @@
+# ROS / Catkin
+build/
+deval/
+devel/
+install/
+logs/
+.catkin_workspace
+.catkin_tools/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# ROS generated / data
+*.bag
+*.log
+*.pgm
+*.yaml
+
+# Environment / secrets
+.env
+*.pem
+*.key
+*.crt
+
+# Temporary files
+tmp/
+temp/

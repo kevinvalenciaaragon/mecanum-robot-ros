@@ -1,0 +1,15 @@
+<launch>
+  <!-- Controlador Mecanum -->
+  <node name="mecanum_controller" pkg="mecanum_robot" type="mecanum_controller.py" output="screen"/>
+
+  <!-- Teleoperación -->
+  <node name="realtime_teleop" pkg="mecanum_robot" type="realtime_teleop_v2.py" output="screen"/>
+
+  <!-- Detección de Obstáculos (con intérprete explícito) -->
+  <node name="obstacle_avoider" pkg="mecanum_robot" type="obstacle_avoider.py" output="screen">
+    <param name="safety_distance" value="1"/>
+    <param name="turning_speed" value="0.2"/>
+    <env name="PYTHONUNBUFFERED" value="1"/>
+    <param name="interpreter" value="/usr/bin/python3"/>  <!-- Forzando python3 -->
+  </node>
+</launch>
