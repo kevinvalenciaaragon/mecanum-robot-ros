@@ -35,33 +35,10 @@ The core ROS application is organized around custom nodes:
 
 In the original project documentation, the robot bring-up launches the control stack and the LIDAR node, while the mapping workflow uses RPLidar data together with Hector SLAM and `map_server` for map generation and saving.
 
-## Recommended Repository Structure
-```text
-mecanum-robot-ros/
-├── README.md
-├── .gitignore
-├── LICENSE
-├── docs/
-│   ├── bringup.md
-│   ├── mapping.md
-│   └── media/
-│       ├── architecture.png
-│       ├── robot_photo.jpg
-│       └── rviz_mapping.png
-├── src/
-│   ├── mecanum_robot/
-│   │   ├── launch/
-│   │   ├── scripts/
-│   │   ├── src/
-│   │   ├── CMakeLists.txt
-│   │   └── package.xml
-│   └── my_localizer_launcher/
-└── maps/
-    └── sample_map/
-```
+
 
 ## Hardware Stack
-- Raspberry Pi as onboard computer
+- Raspberry Pi 4b as onboard computer
 - RPLidar sensor
 - Roboclaw-based motor driver interface
 - 4-wheel mecanum base
@@ -81,7 +58,7 @@ Create a Catkin workspace and clone this repository inside `src/`:
 ```bash
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/src
-git clone https://github.com/YOUR_USERNAME/mecanum-robot-ros.git
+git clone https://github.com/kevinvalenciaaragon/mecanum-robot-ros.git
 cd ~/catkin_ws
 catkin_make
 source devel/setup.bash
@@ -164,10 +141,10 @@ This project demonstrates practical skills in:
 - System bring-up and field testing
 
 ## Author
-**Your Name**  
+**Kevin Valencia-Aragón**  
 Robotics / Control / Automation Engineer  
-LinkedIn: `your-linkedin`  
-Email: `your-email`
+LinkedIn: `https://www.linkedin.com/in/kevin-gabriel-valencia-arag%C3%B3n-1a2782127/`  
+
 
 ---
 
